@@ -2,18 +2,34 @@
 using namespace std;
 
 int main(){
-	int n;
+	int n[100];
 	int i = 1;
 	int a = 0;
-	while(i=1){
-    cout << "Enter an integer: ";
-	cin >> n[a];
-	a++;
-	if (n[a]!=){}
+	while(i==1){
+        cout << "Enter an integer: ";
+    
+	    cin >> n[a];
+        
 	
-		else{i++}
+	     if (n[a]==0){i++;}
+	
+		    else{a++;}
 	}
-    cout << "#Even numbers = ";
-    cout << "#Odd numbers = ";
+
+    i = 0;
+	int even=0;
+	int odd=0;
+	
+	while(i<a){
+	if (n[i] %2 == 0){even++;}
+
+	else   {odd++;}
+	
+    i++;
+    }
+
+    
+	cout << "#Even numbers = "<< even <<"\n";
+    cout << "#Odd numbers = "<< odd << "\n";
     return 0;
 }
